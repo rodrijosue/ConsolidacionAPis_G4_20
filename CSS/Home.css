@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    
+    }
+    body{
+            background:"https://i.pinimg.com/originals/af/97/ef/af97ef7c607be9bf58423121b4c7fc44.jpg" center center cover no-repeat fixed;
+                
+    }
+    
+     
+             
+
+
+     p{
+     
+     font-family:Arial,Times , Sans- serif"";
+     }
+    
+    .main, footer{
+         background:transparent;
+         width: 90%;
+         max-width:1000px;
+         margin:20px auto;
+          
+     }
+    
+     
+    
+    
+     header nav ul li a:hover{
+     background:#a8b8ca;	
+     }
+    
+    .main.articles, article{
+        padding: 20px;
+        background:transparent;
+        margin-bottom:20px; 
+    
+    }
+     
+         
+     footer{
+         background:#fff;
+         color: #fff;
+         clear:both;
+         padding: 10px 0px;
+         text-align: center;
+     }
+     h1{
+    
+        padding: 6px 20px;
+        display: block;
+        font-weight:bold;
+        text-align:center;
+     }
+     h3{
+      text-align:left;
+     }
+     h2{
+        font-family:Arial,Times , Sans- serif"";
+      color: #fff; 
+      text-align:left;
+     }
+     th{
+        font-family:Arial,Times , Sans- serif"";
+        color: #fff; 
+     }
+     td{
+        font-family:Arial,Times , Sans- serif"";
+        color: #fff; 
+     }
+     p{
+     
+         font-family:Arial,Times , Sans- serif"";
+         font-size:20px;
+     }
