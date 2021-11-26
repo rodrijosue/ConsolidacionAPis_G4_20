@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Facturas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/JS/Pedido.js"></script>
-
+    <script src="/JS/facturas.js"></script>
+    
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -77,7 +75,7 @@
         <div class="consulta mt-4">
             <div class="row">
                 <div class="col-6">
-                    <h3>Lista de Pedidos</h3>
+                    <h3>Lista de Facturas</h3>
                 </div>
             </div>
             <div class="box-body">
@@ -86,18 +84,19 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>ID_SOCIO</th>
-                                <th>FECHA_PEDIDO</th>
+                                <th>NUMERO FACTURA</th>
+                                <th>ID SOCIO</th>
+                                <th>FECHA FACTURA</th>
                                 <th>DETALLE</th>
-                                <th>SUB_TOTAL</th>
-                                <th>TOTAL_ISV</th>
+                                <th>SUB TOTAL</th>
+                                <th>TOTAL ISV</th>
                                 <th>TOTAL</th>
-                                <th>FECHA_ENTREGA</th>
+                                <th>FECHA VENCIMIENTO</th>
                                 <th>ESTADO</th>
                             </tr>
                         </thead>
-                        <tbody class="Pedidos">
-
+                        <tbody class="Facturas">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -106,32 +105,31 @@
         <div class="formulario">
             <div class="row">
                 <div class="col-12">
-                    <h3>Agregar Pedido</h3>
+                    <h3>Agregar Factura</h3>
                 </div>
                 <div class="col-12">
-                    <form class="pedido">
-                        <label for="">ID_SOCIO</label>
+                    <form  class="factura">
+                        <label for="">Numero Factura</label>
+                        <input type="text" id="NUMERO_FACTURA" class="form-control" placeholder="Ingrese el Numero de Factura">
+                        <label for="">ID Socio</label>
                         <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese el Id del Socio">
-                        <label for="">FECHA_PEDIDO</label>
-                        <input type="text" id="FECHA_PEDIDO" class="form-control"
-                            placeholder="Ingrese la Fecha del Pedido">
-                        <label for="">DETALLE</label>
+                        <label for="">Fecha Factura</label>
+                        <input type="text" id="FECHA_FACTURA" class="form-control" placeholder="Ingrese la Fecha de la Factura">
+                        <label for="">Detalle</label>
                         <input type="text" id="DETALLE" class="form-control" placeholder="Ingrese la Descripcion">
-                        <label for="">SUB_TOTAL</label>
+                        <label for="">Sub Total</label>
                         <input type="text" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el Sub Total">
-                        <label for="">TOTAL_ISV</label>
+                        <label for="">Total ISV</label>
                         <input type="text" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el Total del ISV">
-                        <label for="">TOTAL</label>
+                        <label for="">Total</label>
                         <input type="text" id="TOTAL" class="form-control" placeholder="Ingrese el Total">
-                        <label for="">FECHA_ENTREGA</label>
-                        <input type="text" id="FECHA_ENTREGA" class="form-control"
-                            placeholder="Ingrese la Fecha de Entrega">
-                        <label for="">ESTADO</label>
+                        <label for="">Fecha Vencimiento</label>
+                        <input type="text" id="FECHA_VENCIMIENTO" class="form-control" placeholder="Ingrese la Fecha de Vencimiento">
+                        <label for="">Estado</label>
                         <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el Estado">
                         <hr>
                         <div class="btnagregar">
-                            <input type="submit" id="btn_agregar" onclick="AgregarPedido()" value="Agregar Pedido"
-                                class="btn btn-success">
+                            <input type="submit" id="btn_agregar" onclick="AgregarFactura()" value="Agregar Factura" class="btn btn-success">
                         </div>
                         <hr>
                     </form>
@@ -140,9 +138,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     crossorigin="anonymous"></script>
 </body>
-
 </html>
